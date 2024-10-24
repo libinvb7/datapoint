@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities{
+  .hero-background{
+    background: url("../app/images/datapintBanner.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+  }
+}
+
+
+@layer components{
+  .btn{
+    @apply text-lg text-white border border-white  px-5 py-2 rounded-lg font-bold
+  }
+  .btn-primary{
+    @apply bg-gradient-to-r from-[#37C1F1] to-[#37BDB0] border-0
+  }
+}
