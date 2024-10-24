@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities{
+  .hero-background{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/images/backgroundhome.svg);
+    background-position: bottom;
+    background-size: cover;
+  }
+  .video-bg{
+    backdrop-filter: blur(16px) saturate(163%);
+    -webkit-backdrop-filter: blur(16px) saturate(163%);
+    background-color: rgba(255, 255, 255, 0.59);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    padding: 30px;
+    box-shadow: drop-shadow(8px 15px 80px rgba(14, 72, 119, 0.20));
+  }
+  .datapoint-video {
+    width: 100%;
+    position: relative; 
+    overflow: hidden; 
+    z-index: 1; 
+    border-radius: 10px;
+}
+
+
+  .bg-gradient-one{
+    background-image: url(/assets/gradient/gradient-2.svg);
+    position: absolute;
+    opacity: 0.6;
+    top: 90%;
+    left: 50px;
+    filter: blur(100px);
+    z-index: -1;
+  }
+  .bg-gradient-two{
+    background-image: url(/assets/gradient/gradient-9.svg);
+    position: absolute;
+    top: 10%;
+    right: 300px;
+    filter: blur(150px);
+    z-index: -1;
+  }
+  .bg-gradient-three{
+    background-image: url(/assets/gradient/shadow-blue.svg);
+    position: absolute;
+    top: 20%;
+    right: 200px;
+    filter: blur(100px);
+    z-index: -1;
+  }
+  .bg-gradient-four{
+    background-image: url(/assets/gradient/shadow-blue.svg);
+    position: absolute;
+    top: 80%;
+    right: 200px;
+    filter: blur(100px);
+    z-index: -1;
+  }
+}
+  
+
+@layer components{
+  .btn{
+    @apply text-lg text-white border border-white  px-5 py-2 rounded-lg font-bold
+  }
+  .btn-primary{
+    @apply bg-gradient-to-r from-[#37C1F1] to-[#37BDB0] border-0
+  }
+  .text-primary{
+    @apply text-center text-3xl md:text-4xl lg:text-4xl font-bold text-[#115991] 
+  }
+}
