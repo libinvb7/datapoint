@@ -17,7 +17,7 @@ const clientImages = [
 
 export const ClientCarousel = () => {
   return (
-    <section className=" mt-20 px-6   ">
+    <section className=" mt-20 px-6  overflow-x-hidden">
       <div className="container">
         <div className="flex justify-center items-center">
           <h2 className="text-primary mb-10 lg:max-w-[600px]">

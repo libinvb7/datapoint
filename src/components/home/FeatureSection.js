@@ -3,7 +3,7 @@ import TabsSection from './TabsSection'
 
 const FeatureSection = () => {
   return (
-    <section className=" mt-20 px-6 sticky top-[100px] h-[2500px]"  >
+    <section className=" mt-20 px-6  "  >
       <div className="container">
         <div className="flex justify-center items-center gap-10">
           <h2 className="text-primary mb-10 lg:max-w-[700px]">
