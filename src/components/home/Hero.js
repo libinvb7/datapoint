@@ -5,7 +5,7 @@ import bannerSlide from "/public/assets/images/bannerslide.png";
 const Hero = () => {
   return (
     
-    <section className="hero-background md:flex items-center relative h-full w-full overflow-x-hidden">
+    <section className="hero-background md:flex items-center relative h-full w-full ">
       <div className="container mx-auto lg:flex gap-3">
         {/* Left Content */}
         <div className="relative">
