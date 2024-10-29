@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import customizationIcon from "/public/assets/images/icons/customization.png";
 import integrationIcon from "/public/assets/images/icons/integration.png";
 import securityIcon from "/public/assets/images/icons/security.png";
