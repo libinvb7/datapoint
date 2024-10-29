@@ -81,6 +81,11 @@
   .testimonial-writings {
     background: linear-gradient(84deg, #115991 2.94%, #1873ac 96.29%);
   }
+  .footer-bg{
+    background: url(/assets/images/footer-background.png);
+    background-size: cover;
+    background-repeat: no-repeat
+  }
 }
 
 @layer components {

@@ -28,7 +28,7 @@ const Hero = () => {
 
         <div className="pt-10 lg:pt-0 ">
           <Image
-            className="lg:absolute md:px-3 lg:px-0 md:top-40 2xl:-right-20 lg:top-36 z-40 "
+            className="lg:absolute md:px-3 lg:px-0 md:top-40 2xl:-right-20 lg:top-36 z-40 lg:[500px]"
             src={bannerSlide}
             alt="Balanced Scorecard Software Banner"
             priority 
