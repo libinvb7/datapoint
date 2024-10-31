@@ -8,9 +8,9 @@ import RightChoice from "@/components/home/RightChoice";
 import VideoSection from "@/components/home/video/VideoSection";
 import TestimonialCarousel from "@/components/home/TestimonialCarousel";
 import TemplateSection from "@/components/home/TemplateSection";
-import BlogListing from "@/components/home/blog/BlogListing";
 import Cta from "@/components/home/Cta";
 import Footer from "@/components/common/Footer";
+import BlogListing from "@/components/home/Blog/BlogListing";
 
 const page = () => {
   return (
