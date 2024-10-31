@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import Image from "next/image";
-import { PiCaretCircleDownThin, PiCaretCircleUpThin } from "react-icons/pi";
+import { PiCaretCircleRightThin, PiCaretCircleLeftThin } from "react-icons/pi";
 import author from "/public/assets/images/testimonials/author.png";
 import pciLogo from "/public/assets/images/testimonials/pci_logo.png";
 import quoteOne from "/public/assets/images/icons/quotes.png";
@@ -52,7 +52,7 @@ const TestimonialCarousel = () => {
     <section className="mt-20 px-6">
       <div className="container flex justify-center items-center flex-col">
         <h2 className="text-primary mb-10 lg:max-w-[700px]">Testimonials</h2>
-        <div className="testimonial-slider relative">
+        <div className="testimonial-slider relative ">
           <div
             ref={testimonialRef}
             className="testimonial-content bg-white rounded-lg p-10"
@@ -101,13 +101,13 @@ const TestimonialCarousel = () => {
               onClick={prevTestimonial}
               className="absolute left-[-100px] top-[50%]"
             >
-              <PiCaretCircleDownThin className="text-7xl text-[#37BDB0]" />
+              <PiCaretCircleLeftThin className="text-7xl text-[#37BDB0]" />
             </button>
             <button
               onClick={nextTestimonial}
               className="absolute right-[-100px] top-[50%]"
             >
-              <PiCaretCircleUpThin className="text-7xl text-[#37BDB0]" />
+              <PiCaretCircleRightThin className="text-7xl text-[#37BDB0]" />
             </button>
           </div>
         </div>

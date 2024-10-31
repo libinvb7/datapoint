@@ -15,13 +15,13 @@ const RightChoice = () => {
           </h2>
         </div>
         {/* first section */}
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col flex-col-reverse md:flex-row" >
         
           <div className="w-full md:w-1/2  mb-4 flex justify-center items-center mb-16">
             <div>
               <div className="flex gap-3 items-center">
-                {" "}
-                <Image src={customizationIcon} width={50} />{" "}
+                
+                <Image src={customizationIcon} width={50} />
                 <span className="text-card">Customisation</span>
               </div>
               <ul className="py-5">
@@ -42,14 +42,14 @@ const RightChoice = () => {
               <button className="btn btn-primary">Explore</button>
             </div>
           </div>
-          <div className="w-full md:w-1/2  mb-4 flex justify-center items-center mb-16">
+          <div className="w-full md:w-1/2  mb-4 flex justify-center items-center mb-16 order-1 md:order-2">
             <Image src={customizationImage} />
           </div>
         </div>
         {/* first section */}
         {/* second section */}
         <div className="flex flex-col md:flex-row">
-        <div className="w-full md:w-1/2  mb-4 flex justify-center items-center mb-16">
+        <div className="w-full md:w-1/2  mb-4 flex justify-center items-center mb-16 ">
             <Image src={customizationImage} />
           </div>
           <div className="w-full md:w-1/2  mb-4 flex justify-center items-center mb-16">
@@ -78,7 +78,7 @@ const RightChoice = () => {
         {/* second section */}
         {/* third section */}
 
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col flex-col-reverse md:flex-row">
           <div className="w-full md:w-1/2  mb-4 flex justify-center items-center mb-16">
             <div>
               <div className="flex gap-3 items-center">
@@ -101,7 +101,7 @@ const RightChoice = () => {
               <button className="btn btn-primary">Explore</button>
             </div>
           </div>
-          <div className="w-full md:w-1/2  mb-4 flex justify-center items-center mb-16">
+          <div className="w-full md:w-1/2  mb-4 flex justify-center items-center mb-16 order-1 md:order-2">
             <Image src={customizationImage} />
           </div>
         </div>

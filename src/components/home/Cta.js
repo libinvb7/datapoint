@@ -7,7 +7,7 @@ import { IoArrowForwardOutline } from "react-icons/io5";
 
 const Cta = () => {
   return (
-    <section className=" px-6  relative top-36">
+    <section className=" px-6  relative top-40">
       <div className="container home-cta flex items-center shadow-2xl rounded-lg relative bg-white overflow-hidden">
         <Image src={ctaEl} className="absolute bottom-[-20px] right-0 z-1" />
         <Image src={ctaEl} className="absolute top-[-20px] left-0 z-1 rotate-180" />

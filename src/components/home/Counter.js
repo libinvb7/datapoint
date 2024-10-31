@@ -10,7 +10,7 @@ const Counter = () => {
           </h2>
         </div>
 
-        <div className="px-4  glass-bg  ">
+        <div className=" p-3 pt-5 lg:p-4  glass-bg">
           <div className="flex flex-col md:flex-row  text-center">
             <div className=" relative w-full md:w-1/3  mb-4 flex justify-center items-center mb-16 flex-col">
               <div>
