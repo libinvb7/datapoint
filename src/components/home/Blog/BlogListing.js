@@ -1,4 +1,4 @@
-import BlogCard from "/BlogCard"
+import BlogCard from "./BlogCard"
 
 const BlogListing = () => {
   return (
@@ -17,7 +17,7 @@ const BlogListing = () => {
         <BlogCard/>
     </div>
       <div className="  w-full md:w-1/3 flex justify-center">
-        <BlogCard/>
+        <BlogCard />
     </div>
    </div>
       <div className="flex justify-center pt-20">
