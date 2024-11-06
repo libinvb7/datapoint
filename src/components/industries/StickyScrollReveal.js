@@ -14,8 +14,8 @@ const content = [
     content: (
         <Image
         src={customizationImage}
-        width={500}
-        className="h-full w-full object-cover"
+        width={1000}
+        className=""
         alt="linear board demo"
       />
     ),
@@ -27,8 +27,8 @@ const content = [
     content: (
         <Image
         src={bannerslide}
-        width={500}
-        className="h-full w-full object-cover"
+        width={1000}
+        className=""
         alt="linear board demo"
       />
     ),
@@ -40,8 +40,8 @@ const content = [
     content: (
         <Image
         src={customizationImage}
-        width={500}
-        className="h-full w-full object-cover"
+        width={1000}
+        className=""
         alt="linear board demo"
       />
     ),
@@ -53,8 +53,8 @@ const content = [
     content: (
         <Image
         src={bannerslide}
-        width={500}
-        className="h-full w-full object-cover"
+        width={1000}
+        className=""
         alt="linear board demo"
       />
     ),
@@ -62,8 +62,10 @@ const content = [
 ];
 export function StickyScrollReveal() {
   return (
-    <disectionv className="">
+    <section className="">
+      <div className="container">
       <StickyScroll content={content} />
-    </disectionv>
+      </div>
+    </section>
   );
 }

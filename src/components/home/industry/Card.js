@@ -9,7 +9,7 @@ const Card = ({data}) => {
     const { title, content,icon,link } = data; 
 
   return (
-    <div className="industry-card rounded-lg max-w-[350px] md:h-[350px] md:h-[400px] p-5 relative">
+    <div className="group  industry-card rounded-lg max-w-[350px] md:h-[350px] md:h-[400px] p-5 relative cursor-pointer group bg-white hover:bg-gradient-to-r hover:scale-105 shadow-lg p-5 lg:p-10 w-full text-left rounded-lg mb-3 transition duration-300 ">
       <Image src={cardBg} alt="industry-card-bg" className="absolute top-0 left-0 z-1"/>
       <Image src={icon} className="py-2 relative z-10" width={80} height={80} />
       <h2 className="text-card">{title}</h2>

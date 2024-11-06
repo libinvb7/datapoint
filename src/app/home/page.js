@@ -11,11 +11,13 @@ import TemplateSection from "@/components/home/TemplateSection";
 import Cta from "@/components/home/Cta";
 import Footer from "@/components/common/Footer";
 import BlogListing from "@/components/home/Blog/BlogListing";
+import { NavbarDemo } from "@/components/common/NavbarDemo";
 
 const page = () => {
   return (
     <div className="bg-body-home">
-      <Navbar />
+      {/* <Navbar /> */}
+      <NavbarDemo/>
       <Hero />
       <VideoSection />
       <ClientCarousel />

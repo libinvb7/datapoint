@@ -55,59 +55,59 @@ const TestimonialCarousel = () => {
         <div className="testimonial-slider relative ">
           <div
             ref={testimonialRef}
-            className="testimonial-content bg-white rounded-lg p-10"
+            className="testimonial-content bg-white rounded-lg p-2 md:p-10"
           >
             <div className="flex flex-col lg:flex-row">
               <div className="w-full lg:w-1/2 flex justify-center items-center flex-col">
                 <div className="flex justify-center items-center flex-col">
-                  <Image src={author} alt="author-img" width={300} />
-                  <h2 className="text-primary text-2xl">
+                  <Image src={author} alt="author-img" className="w-24 md:w-72" />
+                  <h2 className="text-primary md:text-2xl">
                     {testimonials[index].name}
                   </h2>
                   <p className="text-card font-[400]">
                     {testimonials[index].position}
                   </p>
                   <Image
-                    className="pt-3"
+                    className="pt-3 w-24 md:w-56"
                     src={pciLogo}
                     alt="company-img"
-                    width={200}
+                    
                   />
                 </div>
               </div>
               <div className="w-full lg:w-1/2 p-4 flex justify-center items-center relative">
                 <Image
-                  className="absolute top-9 left-4"
+                  className="absolute top-9 left-4 w-20 md:w-36"
                   src={quoteOne}
                   alt="quote-img"
-                  width={150}
+                  
                 />
                 <Image
-                  className="absolute bottom-9 right-4 scale-x-[-1]"
+                  className="absolute bottom-9 right-4 scale-x-[-1] w-20 md:w-36"
                   src={quoteOne}
                   alt="quote-img"
-                  width={150}
+                 
                 />
-                <div className="testimonial-writings rounded-lg p-10">
-                  <p className="text-white text-xl text-center">
+                <div className="testimonial-writings rounded-lg p-5 md:p-10">
+                  <p className="text-white text-sm md:text-xl text-center">
                     “{testimonials[index].content}”
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="controls">
+          <div className="controls text-center">
             <button
               onClick={prevTestimonial}
-              className="absolute left-[-100px] top-[50%]"
+              className="md:absolute left-[-100px] top-[50%]"
             >
-              <PiCaretCircleLeftThin className="text-7xl text-[#37BDB0]" />
+              <PiCaretCircleLeftThin className="text-5xl lg:text-7xl text-[#37BDB0]" />
             </button>
             <button
               onClick={nextTestimonial}
-              className="absolute right-[-100px] top-[50%]"
+              className="md:absolute right-[-100px] top-[50%]"
             >
-              <PiCaretCircleRightThin className="text-7xl text-[#37BDB0]" />
+              <PiCaretCircleRightThin className="text-5xl lg:text-7xl text-[#37BDB0]" />
             </button>
           </div>
         </div>

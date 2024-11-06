@@ -18,15 +18,15 @@ const Counter = () => {
               </div>
               <h3 className="text-card pt-3">Faster strategy <br/> execution</h3>
             </div>
-            <div className="counter-border relative w-full md:w-1/3  mb-4 flex justify-center items-center mb-16 flex-col">
+            <div className="counter-border relative w-full md:w-1/3  mb-4 flex justify-center items-center mb-16 flex-col ">
               <div>
-                <h2 className="text-primary text-black text-5xl">20%</h2>
+                <h2 className="text-primary text-black text-5xl pt-5 md:pt-0">20%</h2>
               </div>
               <h3 className="text-card pt-3">Increase in performance  <br/> visibility</h3>
             </div>
-            <div className="counter-border relative w-full md:w-1/3  mb-4 flex justify-center items-center mb-16 flex-col">
+            <div className="counter-border relative w-full md:w-1/3  mb-4 flex justify-center items-center mb-16 flex-col ">
               <div>
-                <h2 className="text-primary text-black text-5xl">70%</h2>
+                <h2 className="text-primary text-black text-5xl pt-5 md:pt-0">70%</h2>
               </div>
               <h3 className="text-card pt-3">Improvement in goal  <br/> alignment</h3>
             </div>

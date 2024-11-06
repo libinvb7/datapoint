@@ -1,5 +1,4 @@
 "use client"
-import React from 'react'
 import Datapoint from '/public/assets/images/Datapoint_logo.png'
 import Image from 'next/image'
 import Link from 'next/link'

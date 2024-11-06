@@ -60,7 +60,7 @@ const partnerLogo = [
 
 const Footer = () => {
   return (
-    <section className="footer-bg pt-[300px]">
+    <footer className="footer-bg pt-[150px] lg:pt-[300px]">
       <div className="container">
         <div className="flex flex-wrap justify-center relative top-50">
           <div className="  w-full md:w-1/5 flex flex-col  ">
@@ -148,8 +148,8 @@ const Footer = () => {
             </div>
           </div>
           <div className="  w-full md:w-4/5 ">
-            <div className="flex px-5">
-              <div className="w-1/5">
+            <div className="flex md:px-5 flex-wrap ">
+              <div className=" w-full md:w-1/5">
                 <div className="py-2">
                   <h3 className="text-white font-bold ">Contact Us</h3>
                 </div>
@@ -181,7 +181,7 @@ const Footer = () => {
                   Advanced Features
                 </Link>
               </div>
-              <div className="w-1/5">
+              <div className=" w-full md:w-1/5">
                 <div className="py-2">
                   <h3 className="text-white font-bold ">Solutions</h3>
                 </div>
@@ -213,7 +213,7 @@ const Footer = () => {
                   FCIL
                 </Link>
               </div>
-              <div className="w-1/5">
+              <div className=" w-full md:w-1/5">
                 <div className="py-2">
                   <h3 className="text-white font-bold ">Industries</h3>
                 </div>
@@ -239,7 +239,7 @@ const Footer = () => {
                   Banking
                 </Link>
               </div>
-              <div className="w-1/5">
+              <div className=" w-full md:w-1/5">
                 <div className="py-2">
                   <h3 className="text-white font-bold ">Resources</h3>
                 </div>
@@ -262,7 +262,7 @@ const Footer = () => {
                   BSC Resource Hub
                 </Link>
               </div>
-              <div className="w-1/5">
+              <div className=" w-full md:w-1/5">
                 <h2 className="text-white text-3xl font-bold">
                   Let's talk about your<br></br>project.
                   <div>
@@ -272,29 +272,32 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex flex-wrap">
-              <div className="w-2/4">
-                <div className="py-2 pt-5 px-5">
-                  <h3 className="text-white font-bold ">
-                    Lean Manufacturing Software
-                  </h3>
-                  <div className="flex gap-2 mt-3 flex-wrap">
-                    {productLogs.map((logo) => (
-                      <Image
-                        src={logo.logo}
-                        alt="product logo"
-                        width={100}
-                        className="bg-white rounded-lg"
-                      />
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <div className="w-1/4">
-                <div className="py-2 pt-5 px-5">
+            <div className="w-full md:w-3/4 lg:w-2/4">
+  <div className="md:py-2 pt-5 md:px-5">
+    <h3 className="text-white font-bold">
+      Lean Manufacturing Software
+    </h3>
+    <div className="flex gap-2 mt-3 flex-wrap  md:justify-start">
+      {productLogs.map((logo, index) => (
+        <Image
+          key={index}
+          src={logo.logo}
+          alt="product logo"
+          width={100}
+          className="bg-white rounded-lg"
+        />
+      ))}
+    </div>
+  </div>
+</div>
+
+              <div className="md:w-1/4">
+                <div className="md:py-2 pt-5 md:px-5">
                   <h3 className="text-white font-bold ">Our Partners</h3>
                   <div className="flex gap-2 mt-3 flex-wrap">
-                    {partnerLogo.map((logo) => (
+                    {partnerLogo.map((logo,index) => (
                       <Image
+                      key={index}
                         src={logo.logo}
                         alt="product logo"
                         width={100}
@@ -304,8 +307,8 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-1/4">
-                <div className="py-2 pt-5 px-5">
+              <div className="md:w-1/4">
+                <div className="md:py-2 pt-5 md:px-5">
                   <h3 className="text-white font-bold ">Our Partners</h3>
                   <div className="flex gap-2 mt-3 flex-wrap">
                     <Image src={iso} alt="product logo" width={200} />
@@ -321,7 +324,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 

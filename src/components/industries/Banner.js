@@ -6,9 +6,9 @@ const Banner = () => {
   return (
     <section>
       <div className="container">
-        <div className="flex  items-center ">
-          <div className="w-1/2">
-            <h2 className="text-5xl font-bold text-[#145994] leading-[50px]">
+        <div className="flex flex-col md:flex-row items-center md:space-x-8 space-y-8 md:space-y-0">
+          <div className="w-full md:w-1/2">
+            <h2 className="text-3xl lg:text-5xl text-center lg:text-left font-bold text-[#145994] leading-[50px]">
               Optimise your factory operations with <span className="text-[#0F79C0]">
                 Manufacturing Balanced Scorecard
               </span>
@@ -19,7 +19,7 @@ const Banner = () => {
               <button className="btn btn-primary">Book a Demo</button>
             </div>
           </div>
-          <div className="w-1/2">
+          <div className="w-full md:w-1/2">
             <Image className="w-full" src={bannerSlide} />
           </div>
         </div>
