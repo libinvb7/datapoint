@@ -31,7 +31,7 @@ export const ClientCarousel = () => {
           </h2>
         </div>
         <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
-          <motion.div className="flex gap-20 flex-none" animate={{
+          <motion.div className="flex gap-20 flex-none" animate={{ 
             translateX:"-50%"
           }}
           transition={{
