@@ -73,7 +73,7 @@ const cardData=[
           "Sustainability and compliance"
       ],
       "link":"#",
-  }
+  },
 ]
 
 

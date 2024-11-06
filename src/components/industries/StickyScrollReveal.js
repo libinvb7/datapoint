@@ -15,7 +15,7 @@ const content = [
         <Image
         src={customizationImage}
         width={1000}
-        className=""
+        className="w-full"
         alt="linear board demo"
       />
     ),
@@ -28,7 +28,7 @@ const content = [
         <Image
         src={bannerslide}
         width={1000}
-        className=""
+        className="w-full"
         alt="linear board demo"
       />
     ),
@@ -41,7 +41,7 @@ const content = [
         <Image
         src={customizationImage}
         width={1000}
-        className=""
+        className="w-full"
         alt="linear board demo"
       />
     ),
@@ -54,7 +54,7 @@ const content = [
         <Image
         src={bannerslide}
         width={1000}
-        className=""
+        className="w-full"
         alt="linear board demo"
       />
     ),
@@ -62,8 +62,15 @@ const content = [
 ];
 export function StickyScrollReveal() {
   return (
-    <section className="">
+    <section className="py-20">
       <div className="container">
+      <div className="flex justify-center items-center flex-col">
+          <h2 className="text-primary mb-10 ">
+          Transforming manufacturing challenges to opportunities:
+          Why Data Point is your smartest solution?
+          </h2>
+          <p>Data Point Balanced Scorecard framework is the ideal strategic management tool that helps the manufacturers align their objectives with KPIs</p>
+        </div>
       <StickyScroll content={content} />
       </div>
     </section>

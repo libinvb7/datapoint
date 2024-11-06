@@ -4,7 +4,7 @@ import { BsFillRocketTakeoffFill } from "react-icons/bs";
 import { IoIosMail } from "react-icons/io";
 import Message from "/public/assets/images/Message.png";
 import Profile from "/public/assets/images/Profile.png";
-// import chat from "/public/assets/images/chatForm.png";
+import chat from "/public/assets/images/chatForm.png";
 
 const FormIndustry = () => {
   return (
@@ -36,7 +36,7 @@ const FormIndustry = () => {
                 <form className=" mx-auto">
                   <div className="mb-5">
                     <label
-                      for="email"
+                      htmlFor="email"
                       className="block mb-2 text-lg font-medium text-gray-900 dark:text-white"
                     >
                       Business email<span className="text-red-600">*</span>
@@ -57,7 +57,7 @@ const FormIndustry = () => {
                   </div>
                   <div className="mb-5">
                     <label
-                      for="email"
+                      htmlFor="email"
                       className="block mb-2 text-lg font-medium text-gray-900 dark:text-white"
                     >
                       Full name<span className="text-red-600">*</span>
@@ -78,7 +78,7 @@ const FormIndustry = () => {
                   </div>
                   <div className="mb-5">
                     <label
-                      for="email"
+                      htmlFor="email"
                       className="block mb-2 text-lg font-medium text-gray-900 dark:text-white"
                     >
                       Phone Number<span className="text-red-600">*</span>
@@ -99,7 +99,7 @@ const FormIndustry = () => {
                   </div>
                   <div className="mb-5">
                     <label
-                      for="email"
+                      htmlFor="email"
                       className="block mb-2 text-lg font-medium text-gray-900 dark:text-white"
                     >
                       Select your scorecard framework
@@ -121,14 +121,14 @@ const FormIndustry = () => {
                   </div>
                   <div className="mb-5">
                     <label
-                      for="email"
+                      htmlFor="email"
                       className="block mb-2 text-lg font-medium text-gray-900 dark:text-white"
                     >
                       Message
                     </label>
                     <div className="relative">
                       <div className="absolute inset-y-0 flex items-start top-[10px] ps-3.5 pointer-events-none">
-                        {/* <Image src={chat} width={20} /> */}
+                        <Image src={chat} width={20} />
                       </div>
                       <textarea
   id="email-address-icon"

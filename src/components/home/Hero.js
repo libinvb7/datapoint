@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="container mx-auto lg:flex gap-3">
         {/* Left Content */}
         <div className="relative">
-          <div className="relative flex flex-col justify-center items-center lg:block sm: lg:max-w-[700px] pt-20 lg:pt-32 md:pt-0 ">
+          <div className="relative flex flex-col justify-center items-center lg:block sm: lg:max-w-[700px]  pt-32 md:pt-0 ">
             <div className=" text-center lg:text-left z-10 px-9 py-2 inline-block w-fit rounded-[40px] border border-dashed border-white text-white font-bold text-sm lg:text-lg">
               KPI-Driven data insights
             </div>

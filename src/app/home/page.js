@@ -17,7 +17,7 @@ const page = () => {
   return (
     <div className="bg-body-home">
       {/* <Navbar /> */}
-      <NavbarDemo/>
+      <NavbarDemo />
       <Hero />
       <VideoSection />
       <ClientCarousel />

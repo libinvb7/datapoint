@@ -6,44 +6,21 @@ import pci from "/public/assets/clients/pci.png";
 import philips from "/public/assets/clients/philips.png";
 import schindler from "/public/assets/clients/schindler.png";
 import trp from "/public/assets/clients/trp.png";
-import { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-
+import {motion} from 'framer-motion'
 const clientImages = [
-  { id: 1, imageUrl: hitachi, width: 100, height: 50, logoName: "hitachi" },
-  { id: 2, imageUrl: kineco, width: 200, height: 100, logoName: "kineco" },
-  { id: 3, imageUrl: pci, width: 100, height: 100, logoName: "pci" },
-  { id: 4, imageUrl: philips, width: 50, height: 100, logoName: "philips" },
-  { id: 5, imageUrl: schindler, width: 60, height: 100, logoName: "schindler" },
-  { id: 6, imageUrl: trp, width: 100, height: 100, logoName: "trp" },
+  { id: 1, imageUrl: hitachi,  logoName: "hitachi" },
+  { id: 2, imageUrl: kineco,  logoName: "kineco" },
+  { id: 3, imageUrl: pci,  logoName: "pci" },
+  { id: 4, imageUrl: philips,  logoName: "philips" },
+  { id: 5, imageUrl: schindler,  logoName: "schindler" },
+  { id: 6, imageUrl: trp,  logoName: "trp" },
 ];
 
 // Duplicate the images for seamless looping
 const loopingClientImages = [...clientImages, ...clientImages];
 
 export const ClientCarousel = () => {
-  const logoContainerRef = useRef(null);
 
-  useEffect(() => {
-    const logoContainer = logoContainerRef.current;
-
-    // Calculate total width of logos
-    const totalWidth = logoContainer.scrollWidth / 2;
-
-    // GSAP animation
-    gsap.to(logoContainer, {
-      x: -totalWidth,
-      duration: 20, // Adjust speed here
-      ease: "none",
-      repeat: -1,
-      modifiers: {
-        x: gsap.utils.unitize((x) => {
-          const parsedX = parseFloat(x);
-          return parsedX % totalWidth; // Keep it in the bounds of the total width
-        }),
-      },
-    });
-  }, []);
 
   return (
     <section className="mt-20 px-6 overflow-x-hidden">
@@ -53,20 +30,34 @@ export const ClientCarousel = () => {
             Choice of industry leaders and Fortune 500 companies
           </h2>
         </div>
-        <div
-          className="logos flex justify-center items-center gap-40 logo-container"
-          ref={logoContainerRef}
-        >
+        <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
+          <motion.div className="flex gap-20 flex-none" animate={{
+            translateX:"-50%"
+          }}
+          transition={{
+            duration:20,
+            ease: "linear",
+            repeat:Infinity,
+            repeatType:"loop"
+          }}
+          >
           {loopingClientImages.map((client, index) => (
             <Image
               key={`${client.id}-${index}`}
               src={client.imageUrl}
               alt={client.logoName}
-              width={client.width}
-              height={client.height}
-              className="logo"
+              className="logo-ticker-image"
             />
           ))}
+           {loopingClientImages.map((client, index) => (
+            <Image
+              key={`${client.id}-${index}`}
+              src={client.imageUrl}
+              alt={client.logoName}
+              className="logo-ticker-image"
+            />
+          ))}
+          </motion.div>
         </div>
       </div>
     </section>

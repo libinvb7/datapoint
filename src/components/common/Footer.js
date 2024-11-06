@@ -137,13 +137,13 @@ const Footer = () => {
               <FaXTwitter className="text-3xl text-white p-1"/>
               </div>
             <div className="icon bg-white/20 p-2 rounded-lg relative ">
-              <FaYoutube  ook className="text-3xl text-white p-1"/>
+              <FaYoutube   className="text-3xl text-white p-1"/>
               </div>
             <div className="icon bg-white/20 p-2 rounded-lg relative ">
               <FaLinkedin  className="text-3xl text-white p-1"/>
               </div>
             <div className="icon bg-white/20 p-2 rounded-lg relative ">
-              <FaInstagram s className="text-3xl text-white p-1"/>
+              <FaInstagram  className="text-3xl text-white p-1"/>
               </div>
             </div>
           </div>
