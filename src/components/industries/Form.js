@@ -4,7 +4,7 @@ import { BsFillRocketTakeoffFill } from "react-icons/bs";
 import { IoIosMail } from "react-icons/io";
 import Message from "/public/assets/images/Message.png";
 import Profile from "/public/assets/images/Profile.png";
-import chat from "/public/assets/images/chatForm.png";
+import chat from "/public/assets/images/ChatFormnew.png";
 
 const FormIndustry = () => {
   return (
