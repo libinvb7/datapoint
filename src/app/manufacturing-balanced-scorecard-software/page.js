@@ -1,4 +1,5 @@
 import Footer from "@/components/common/Footer";
+import { NavbarDemo } from "@/components/common/NavbarDemo";
 import NavbarTwo from "@/components/common/NavbarTwo";
 import { ClientCarousel } from "@/components/home/ClientCarousel";
 import Counter from "@/components/home/Counter";
@@ -16,7 +17,7 @@ import React from "react";
 const page = () => {
   return (
     <div className="bg-industry-home">
-      <NavbarTwo />
+      <NavbarDemo />
       <Banner />
       <ClientCarousel />
       <StickyScrollReveal />
