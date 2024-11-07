@@ -1,16 +1,15 @@
 import VideoPlayer from "./VideoPlayer ";
 
-const VideoSection = () => {
+const VideoSection = ({title}) => {
   return (
     <>
     
       <section className=" px-6   overflow-x-hidden ">
         <div className="container">
-          <h2 className="text-primary ">
-            Experience the power of Data Point in action
-          </h2>
+          {title?<h2 className="text-primary mb-10 lg:mb-16">{title}
+          </h2>:""}
 
-          <div className="glass-bg mt-10 lg:mt-16 rounded-lg">
+          <div className="glass-bg   rounded-lg">
             <VideoPlayer />
           </div>
         </div>

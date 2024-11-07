@@ -21,7 +21,7 @@ const page = () => {
       <Banner />
       <ClientCarousel />
       <StickyScrollReveal />
-      <VideoSection />
+      <VideoSection title="Experience the power of Data Point in action"/>
       <Counter />
       <ManufacturingCompaniesUseBalancedScorecard />
       <TestimonialCarousel />

@@ -9,7 +9,7 @@ const Banner = () => {
         <div className="flex flex-col md:flex-row items-center md:space-x-8 space-y-8 md:space-y-0">
           <div className="w-full md:w-1/2">
             <h2 className="text-3xl lg:text-5xl text-center lg:text-left font-bold text-[#145994] leading-[50px]">
-              Optimise your factory operations with <span className="text-[#0F79C0]">
+              Optimise your factory operations with <span className="bg-gradient-to-r from-[#1873ac]  to-[#2ca9e0] bg-clip-text text-transparent">
                 Manufacturing Balanced Scorecard
               </span>
             </h2>

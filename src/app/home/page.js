@@ -19,7 +19,7 @@ const page = () => {
       {/* <Navbar /> */}
       <NavbarDemo />
       <Hero />
-      <VideoSection />
+      <VideoSection title="Experience the power of Data Point in action"/>
       <ClientCarousel />
       <FeatureSection />
       <IndustrySection />

@@ -91,6 +91,16 @@
   .testimonial-writings {
     background: linear-gradient(84deg, #115991 2.94%, #1873ac 96.29%);
   }
+  .boxes-custom-background{
+    background: url(/assets/images/background-nosie.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: opacity(0.9);
+  }
+  .custom-solutions-mask{
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), black, rgba(0, 0, 0, 0.7));
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), black, rgba(0, 0, 0, 0.7));
+  }
 
   @media only screen and (max-width: 668px) {
     .counter-border::after {
