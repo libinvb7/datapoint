@@ -62,7 +62,7 @@ const content = [
 ];
 export function StickyScrollReveal() {
   return (
-    <section className="py-20">
+    <section className="pt-20">
       <div className="container">
       <div className="flex justify-center items-center flex-col">
           <h2 className="text-primary mb-10 ">

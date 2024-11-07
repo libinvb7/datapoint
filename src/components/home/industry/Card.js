@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import cardBg from "/public/assets/images/card-bg.png";
 import { FaCheck } from "react-icons/fa6";

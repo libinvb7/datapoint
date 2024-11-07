@@ -24,6 +24,13 @@
     height: 100%;
     width: 100%;
   }
+  .bg-solutions-home {
+    background: url(/assets/images/Solutions-bg.svg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-position: top;
+  }
 
   .hero-background {
     width: 100%;
@@ -134,6 +141,13 @@
   }
   .logo-ticker-image{
     @apply h-16 w-auto
+  }
+  .solution-card:first-child {
+    @apply border-r-2 border-[#115991]/20;
+  }
+  
+  .solution-card:nth-child(2) {
+    @apply border-r-2 border-[#115991]/20;
   }
 }
 

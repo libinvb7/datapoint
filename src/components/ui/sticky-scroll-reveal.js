@@ -14,7 +14,7 @@ export const StickyScroll = ({
     // uncomment line 22 and comment line 23 if you DONT want the overflow container and want to have it change on the entire page scroll
     target: ref,
     // container: ref,
-    offset: ["start center", "end start"],
+    offset: ["start center", "end center"],
   });
   const cardLength = content.length;
 
@@ -39,7 +39,7 @@ export const StickyScroll = ({
       animate={{
         
       }}
-      className="  flex justify-center relative "
+      className="  flex justify-center relative gap-3 "
       ref={ref}>
       <div className="relative flex items-start px-4">
         <div className="">
@@ -74,7 +74,7 @@ export const StickyScroll = ({
       <div
       
         className={cn(
-          "hidden lg:block h-[500px] w-[800px] sticky top-[25%] overflow-hidden",
+          "hidden lg:block h-[500px] w-[600px] sticky top-[30%] overflow-hidden",
           contentClassName
         )}>
         {content[activeCard].content ?? null}
