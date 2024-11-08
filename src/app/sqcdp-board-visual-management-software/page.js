@@ -1,3 +1,4 @@
+import Footer from "@/components/common/Footer"
 import Navbar from "@/components/common/Navbar"
 import { NavbarDemo } from "@/components/common/NavbarDemo"
 import { ClientCarousel } from "@/components/home/ClientCarousel"
@@ -11,12 +12,13 @@ import { BackgroundBoxesDemo } from "@/components/solutions/BackgroundBoxesDemo"
 import LearnMore from "@/components/solutions/LearnMore"
 import SolutionCta from "@/components/solutions/SolutionCta"
 import SolutionsCard from "@/components/solutions/SolutionsCardSection"
+import AccordionSection from "@/components/SQDCP/AccordionSection"
 
 const page = () => {
   return (
     <div className="bg-solutions-home">
     <NavbarDemo/>
-    <BackgroundBoxesDemo/>
+    <BackgroundBoxesDemo title="Streamline your Shop Floor with" highlightedTitle=" SQCDP Board Visual Management Software" desc="Maximise productivity and optimise shop floor operations with a digital SQCDP board designed for real-time performance tracking."/>
     <VideoSection />
     <ClientCarousel/>
     <SolutionsCard/>
@@ -27,6 +29,8 @@ const page = () => {
     <CtaTwo/>
     <FormIndustry/>
     <LearnMore/>
+    <AccordionSection/>
+    <Footer/>
 
     </div>
   )

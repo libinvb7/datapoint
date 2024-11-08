@@ -1,8 +1,4 @@
 import Image from "next/image";
-import cardBg from "/public/assets/images/card-bg.png";
-import { FaCheck } from "react-icons/fa6";
-import { PiArrowUpRightThin } from "react-icons/pi";
-import Link from "next/link";
 
 const SolutionCard = ({ data }) => {
   const { title, content, icon, link } = data;

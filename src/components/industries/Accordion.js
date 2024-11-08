@@ -19,9 +19,9 @@ const Accordion = ({ items }) => {
               {item.title}
             </h2>
             {index === activeIndex ? (
-              <BsArrowUpCircle className='lg:text-4xl text-[#115991]' />
+              <BsArrowUpCircle className='text-6xl lg:text-4xl text-[#115991] duration-300' />
             ) : (
-              <BsArrowDownCircle className='text-6xl lg:text-4xl text-[#115991]' />
+              <BsArrowDownCircle className='text-6xl lg:text-4xl text-[#115991] duration-300' />
             )}
           </div>
           <div
@@ -29,7 +29,7 @@ const Accordion = ({ items }) => {
             style={{ height: activeIndex === index ? contentRefs.current[index]?.scrollHeight : 0 }}
             ref={el => contentRefs.current[index] = el}
           >
-            <div className="pt-5 text-xl">{item.content}</div>
+            <div className="pt-5 md:text-xl">{item.content}</div>
           </div>
         </div>
       ))}

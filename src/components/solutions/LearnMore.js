@@ -3,27 +3,27 @@ import LearnMoreCard from "./LearnMoreCard";
 const cardData = [
   {
     title: "How do you use a SQCDP board? ",
-    link:"" ,
+    link:"/" ,
   },
   {
-    title: "Driving continuous improvement with SQDCP... ",
-    link:"" ,
+    title: "Driving continuous improvement with SQDCP ",
+    link:"/" ,
   },
   {
-    title: "Streamline Operations with SQCDP Board Visual Manage...  ",
-    link:"" ,
+    title: "Streamline Operations with SQCDP Board Visual Manage  ",
+    link:"/" ,
   },
   {
     title: "SQDCP Template ",
-    link:"" ,
+    link:"/" ,
   },
   {
     title: "What is SQDCPE? ",
-    link:"" ,
+    link:"/" ,
   },
   {
-    title: "How can SQDCP boards be utilised to promote continu... ",
-    link:"" ,
+    title: "How can SQDCP boards be utilised to promote promote promote promote promote promote promote promote  ",
+    link:"/" ,
   },
  
 ];
@@ -44,7 +44,7 @@ const LearnMore = () => {
       <div className="flex flex-wrap justify-center pt-[50px]">
         {cardData.map((data, index) => (
           <div
-            className="w-full lg:w-1/3 md:w-1/2 px-2 mb-4 flex justify-center items-center mb-16 solution-card"
+            className="w-full  md:w-1/2 px-2 mb-4 flex justify-center items-center mb-16 "
             key={index}
           >
             <LearnMoreCard data={data} />
