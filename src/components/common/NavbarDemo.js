@@ -73,12 +73,6 @@ function Navbar({ className }) {
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
             <ProductItem
-              title="Healthcare"
-              href="/medical-health-balanced-scorecard-software"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
-              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
-            />
-            <ProductItem
               title="FMCG & retail"
               href="/fmcg-retail-balanced-scorecard"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
