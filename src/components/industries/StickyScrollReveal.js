@@ -1,10 +1,6 @@
 "use client";
 import React from "react";
 import { StickyScroll } from "../ui/sticky-scroll-reveal";
-import Image from "next/image";
-import customizationImage from "/public/assets/images/customization-img.png";
-import bannerslide from "/public/assets/images/bannerslide.png";
-
 
 
 export function StickyScrollReveal({title,desc, content}) {

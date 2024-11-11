@@ -11,12 +11,11 @@ import Cta from "@/components/home/Cta";
 import Footer from "@/components/common/Footer";
 import BlogListing from "@/components/home/Blog/BlogListing";
 
-
-const counterContent ={
-  counterTitle:{
+const counterContent = {
+  counterTitle: {
     title: "Driving Efficiency and Performance Gains with Data Point ",
   },
-  counterData:[
+  counterData: [
     {
       title: "Faster strategy execution ",
       number: "40",
@@ -30,19 +29,19 @@ const counterContent ={
       number: "70",
     },
   ],
-}
+};
 
 const page = () => {
   return (
     <div className="bg-body-home">
       <Hero />
-      <VideoSection title="Experience the power of Data Point in action"/>
+      <VideoSection title="Experience the power of Data Point in action" />
       <ClientCarousel />
       <FeatureSection />
       <IndustrySection />
       <RightChoice />
       <Counter
-        counterTitle={counterContent .counterTitle.title}
+        counterTitle={counterContent.counterTitle?.title}
         counterData={counterContent.counterData}
       />
       <TestimonialCarousel />

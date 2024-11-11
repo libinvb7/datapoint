@@ -1,8 +1,8 @@
 import { ClientCarousel } from "@/components/home/ClientCarousel";
 import Counter from "@/components/home/Counter";
 import IndustrySection from "@/components/home/industry/IndustrySection";
-import AccordionSection from "@/components/manufacturing/AccordionSection";
-import ManufacturingCompaniesUseBalancedScorecard from "@/components/manufacturing/ManufacturingCompaniesUseBalancedScorecard";
+import AccordionSection from "@/components/industries/AccordionSection";
+import ManufacturingCompaniesUseBalancedScorecard from "@/components/industries/ManufacturingCompaniesUseBalancedScorecard";
 import TestimonialCarousel from "@/components/home/TestimonialCarousel";
 import VideoSection from "@/components/home/video/VideoSection";
 import Banner from "@/components/industries/Banner";
@@ -23,24 +23,27 @@ const page = () => {
       />
       <ClientCarousel />
       <StickyScrollReveal
-        title={automotiveData.StickyScrollContentTitle.title}
-        desc={automotiveData.StickyScrollContentTitle.content}
+        title={automotiveData.StickyScrollContentTitle?.title}
+        desc={automotiveData.StickyScrollContentTitle?.content}
         content={automotiveData.StickyScrollContent}
       />
-      <VideoSection title="Experience the Power of Data Point Automotive Digital Balanced Scorecard " desc="Use Data Point’s advanced Balanced Scorecard tailored for the automotive industry to drive Lean Manufacturing, optimise operations, and monitor crucial KPIs for sustained growth and increased productivity. "/>
+      <VideoSection
+        title="Experience the Power of Data Point Automotive Digital Balanced Scorecard "
+        desc="Use Data Point’s advanced Balanced Scorecard tailored for the automotive industry to drive Lean Manufacturing, optimise operations, and monitor crucial KPIs for sustained growth and increased productivity. "
+      />
       <Counter
-        counterTitle={automotiveData .counterTitle.title}
+        counterTitle={automotiveData.counterTitle?.title}
         counterData={automotiveData.counterData}
       />
       <ManufacturingCompaniesUseBalancedScorecard
-        cardSectionTitle={automotiveData.cardSectionTitle.title}
+        cardSectionTitle={automotiveData.cardSectionTitle?.title}
         cardData={automotiveData.cardData}
       />
       <TestimonialCarousel />
       <CtaTwo />
       <FormIndustry
-        title={automotiveData.formContents.title}
-        desc={automotiveData.formContents.desc}
+        title={automotiveData.formContents?.title}
+        desc={automotiveData.formContents?.desc}
       />
       <AccordionSection accordionData={automotiveData.accordionItems} />
     </div>
