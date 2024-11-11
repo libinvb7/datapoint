@@ -3,7 +3,7 @@ import { useState, useRef } from 'react';
 import { BsArrowDownCircle, BsArrowUpCircle } from "react-icons/bs";
 
 const Accordion = ({ items }) => {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
   const contentRefs = useRef([]);
 
   const toggleAccordion = (index) => {
