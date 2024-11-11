@@ -47,31 +47,50 @@ function Navbar({ className }) {
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Industries">
-          <div className="  text-sm grid grid-cols-2 gap-10 p-4">
+          <div className="  text-sm grid grid-cols-4 gap-10 p-4">
             <ProductItem
-              title="manufacturing"
+              title="Manufacturing"
               href="/manufacturing-balanced-scorecard-software"
               src="https://assets.aceternity.com/demos/algochurn.webp"
               description="Prepare for tech interviews like never before."
             />
             <ProductItem
-              title="Tailwind Master Kit"
-              href="https://tailwindmasterkit.com"
+              title="Energy"
+              href="/energy-balanced-scorecard-software"
               src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
               description="Production ready Tailwind css components for your next project"
             />
             <ProductItem
-              title="Moonbeam"
-              href="https://gomoonbeam.com"
+              title="Automotive"
+              href="/automotive-balanced-scorecard-software"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
               description="Never write from scratch again. Go from idea to blog in minutes."
             />
             <ProductItem
-              title="Rogue"
-              href="https://userogue.com"
+              title="Electronics"
+              href="/electronics-balanced-scorecard-software"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
+            <ProductItem
+              title="Healthcare"
+              href="/medical-health-balanced-scorecard-software"
+              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+            />
+            <ProductItem
+              title="FMCG & retail"
+              href="/fmcg-retail-balanced-scorecard"
+              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+            />
+            <ProductItem
+              title="Banking"
+              href="/bank-balanced-scorecard-board"
+              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+            />
+            
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Solutions">

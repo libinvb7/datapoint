@@ -15,7 +15,7 @@ const Accordion = ({ items }) => {
       {items.map((item, index) => (
         <div key={index} className="accordion-item py-10 border-b border-b-[#115991]/30 cursor-pointer">
           <div className="flex justify-between items-center gap-3" onClick={() => toggleAccordion(index)}>
-            <h2 className="accordion-header text-lg lg:text-2xl font-bold">
+            <h2 className="accordion-header text-lg lg:text-2xl font-bold max-w-[90%]">
               {item.title}
             </h2>
             {index === activeIndex ? (

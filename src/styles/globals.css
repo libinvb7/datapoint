@@ -75,7 +75,16 @@
     background-repeat: no-repeat;
     box-shadow: 8px 15px 80px rgba(14, 72, 119, 0.2);
   }
-  .counter-border::after {
+  .counter-border:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to right, #37c1f1, #37bdb0);
+  }
+  .counter-border:nth-child(3 )::after {
     content: "";
     position: absolute;
     left: 0;
@@ -109,6 +118,11 @@
   -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), black, rgba(0, 0, 0, 0.7));
   }
 
+  @media only screen and (max-width: 768px) {
+    .industry-section {
+      background: #115991;
+    }
+  }
   @media only screen and (max-width: 668px) {
     .counter-border::after {
       content: "";
@@ -125,9 +139,7 @@
     .testimonial-slider {
       max-width: 100%;
     }
-    .industry-section {
-      background-color: #115991;
-    }
+ 
   }
   .industryCardAfter::after {
     content: "";

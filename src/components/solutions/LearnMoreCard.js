@@ -8,10 +8,10 @@ const LearnMoreCard = ({ data }) => {
   return (
     <Link href={link} className="w-full">
   <div className="group peer w-full border -red-300 p-5 flex items-center justify-between gap-3 glass-bg hover:scale-[1.02]  duration-300 ease-in-out">
-    <div className="bg-[#D7F1FB] p-2 rounded-2xl group-hover:rounded-full duration-300 ease-in">
+    <div className="bg-[#D7F1FB] p-2 rounded-2xl group-hover:rounded-full transition-[border-radius] duration-300 ease-in">
       <Image
         src={info}
-        className="bg-white p-2 rounded-2xl group-hover:rounded-full duration-300 ease-in"
+        className="bg-white p-2 rounded-2xl group-hover:rounded-full transition-[border-radius] duration-300 ease-in"
         alt="card icon"
       />
     </div>

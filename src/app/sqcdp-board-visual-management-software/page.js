@@ -13,24 +13,23 @@ import LearnMore from "@/components/solutions/LearnMore"
 import SolutionCta from "@/components/solutions/SolutionCta"
 import SolutionsCard from "@/components/solutions/SolutionsCardSection"
 import AccordionSection from "@/components/SQDCP/AccordionSection"
+import manufacturingData from "../../data/industires/manufacturingData";
 
 const page = () => {
   return (
     <div className="bg-solutions-home">
-    <NavbarDemo/>
     <BackgroundBoxesDemo title="Streamline your Shop Floor with" highlightedTitle=" SQCDP Board Visual Management Software" desc="Maximise productivity and optimise shop floor operations with a digital SQCDP board designed for real-time performance tracking."/>
     <VideoSection />
     <ClientCarousel/>
     <SolutionsCard/>
     <SolutionCta/>
-    <StickyScrollReveal />
+    <StickyScrollReveal  title={manufacturingData.StickyScrollContentTitle.title} desc={manufacturingData.StickyScrollContentTitle.content}  content={manufacturingData.StickyScrollContent}/>
     <Counter/>
     <TestimonialCarousel/>
     <CtaTwo/>
     <FormIndustry/>
     <LearnMore/>
     <AccordionSection/>
-    <Footer/>
 
     </div>
   )

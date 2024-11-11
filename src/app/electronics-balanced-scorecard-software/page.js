@@ -10,39 +10,39 @@ import CtaTwo from "@/components/industries/CtaTwo";
 import FormIndustry from "@/components/industries/Form";
 import { StickyScrollReveal } from "@/components/industries/StickyScrollReveal";
 import React from "react";
-import manufacturingData from "../../data/industires/manufacturingData";
+import electronicsData from "../../data/industires/electronicsData";
 
 const page = () => {
   return (
     <div className="bg-industry-home">
       <Banner
-        title={manufacturingData.bannerData?.title}
-        highlightTitle={manufacturingData.bannerData?.HighlightTitle}
-        desc={manufacturingData.bannerData?.desc}
-        imageUrl={manufacturingData.bannerData?.Image}
+        title={electronicsData.bannerData?.title}
+        highlightTitle={electronicsData.bannerData?.HighlightTitle}
+        desc={electronicsData.bannerData?.desc}
+        imageUrl={electronicsData.bannerData?.Image}
       />
       <ClientCarousel />
       <StickyScrollReveal
-        title={manufacturingData.StickyScrollContentTitle.title}
-        desc={manufacturingData.StickyScrollContentTitle.content}
-        content={manufacturingData.StickyScrollContent}
+        title={electronicsData.StickyScrollContentTitle.title}
+        desc={electronicsData.StickyScrollContentTitle.content}
+        content={electronicsData.StickyScrollContent}
       />
       <VideoSection title="Experience the power of Data Point in action" desc="Use Data Point’s advanced Balanced Scorecard to drive Lean practices in electronics manufacturing, streamline operations, and track key KPIs for ongoing improvement and productivity."/>
       <Counter
-        counterTitle={manufacturingData.counterTitle.title}
-        counterData={manufacturingData.counterData}
+        counterTitle={electronicsData .counterTitle.title}
+        counterData={electronicsData.counterData}
       />
       <ManufacturingCompaniesUseBalancedScorecard
-        cardSectionTitle={manufacturingData.cardSectionTitle.title}
-        cardData={manufacturingData.cardData}
+        cardSectionTitle={electronicsData.cardSectionTitle.title}
+        cardData={electronicsData.cardData}
       />
       <TestimonialCarousel />
       <CtaTwo />
       <FormIndustry
-        title={manufacturingData.formContents.title}
-        desc={manufacturingData.formContents.desc}
+        title={electronicsData.formContents.title}
+        desc={electronicsData.formContents.desc}
       />
-      <AccordionSection accordionData={manufacturingData.accordionItems} />
+      <AccordionSection accordionData={electronicsData.accordionItems} />
     </div>
   );
 };

@@ -9,9 +9,9 @@ const TemplateSection = () => {
   return (
     <section className=" mt-20 px-6  pb-20">
       <div className="container">
-        <div className=" p-3 pt-5 lg:p-4  glass-bg">
+        <div className=" p-10  lg:pt-5 lg:p-4  glass-bg">
           <div className="flex flex-col lg:flex-row  text-center items-center justify-center">
-            <div className="w-full md:w-1/2 flex justify-center items-center  flex-col">
+            <div className="w-full lg:w-1/2 flex justify-center items-center  flex-col">
               <div>
                 <h2 className="text-primary">
                   Get started with
@@ -21,13 +21,13 @@ const TemplateSection = () => {
                 <Image src={customizationImage} width={500} />
               </div>
             </div>
-            <div className=" relative w-full md:w-1/2 P-5 ">
+            <div className=" relative w-full lg:w-1/2 P-5 ">
               <div className="relative overflow-hidden p-5 lg:p-10 w-full text-left rounded-lg mb-3 shadow-lg transition duration-300 group cursor-pointer">
                 <div className="absolute inset-0 bg-gradient-to-r from-[#37C1F1] to-[#37BDB0] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></div>
                 <div className="relative flex justify-between items-center">
                   <div className="flex gap-3 items-center">
-                    <PiVideoFill className="text-[#115991] group-hover:text-white text-2xl md:text-5xl font-bold bg-white/30 p-1 rounded-lg" />
-                    <h3 className="text-[#115991] group-hover:text-white text-xl md:text-2xl font-bold">
+                    <PiVideoFill className="text-[#115991] group-hover:text-white text-5xl font-bold bg-white/30 p-1 rounded-lg" />
+                    <h3 className="text-[#115991] group-hover:text-white text-md  md:text-2xl font-bold">
                       Experience Data Point Demo
                     </h3>
                   </div>
@@ -38,8 +38,8 @@ const TemplateSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-[#37C1F1] to-[#37BDB0] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></div>
                 <div className="relative flex justify-between items-center">
                   <div className="flex gap-3 items-center">
-                    <RiDashboardFill className="text-[#115991] group-hover:text-white text-2xl md:text-5xl font-bold bg-white/30 p-1 rounded-lg" />
-                    <h3 className="text-[#115991] group-hover:text-white text-xl md:text-2xl font-bold">
+                    <RiDashboardFill className="text-[#115991] group-hover:text-white text-5xl font-bold bg-white/30 p-1 rounded-lg" />
+                    <h3 className="text-[#115991] group-hover:text-white text-md md:text-2xl font-bold">
                       Get Started with Templates
                     </h3>
                   </div>
@@ -51,8 +51,8 @@ const TemplateSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-[#37C1F1] to-[#37BDB0] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></div>
                 <div className="relative flex justify-between items-center">
                   <div className="flex gap-3 items-center">
-                    <MdHub className="text-[#115991] group-hover:text-white text-2xl md:text-5xl font-bold bg-white/30 p-1 rounded-lg" />
-                    <h3 className="text-[#115991] group-hover:text-white text-xl md:text-2xl font-bold">
+                    <MdHub className="text-[#115991] group-hover:text-white text-5xl font-bold bg-white/30 p-1 rounded-lg" />
+                    <h3 className="text-[#115991] group-hover:text-white text-md  md:text-2xl font-bold">
                       Explore Knowledge Hub
                     </h3>
                   </div>

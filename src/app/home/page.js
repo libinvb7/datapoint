@@ -1,4 +1,3 @@
-import Navbar from "@/components/common/Navbar";
 import { ClientCarousel } from "@/components/home/ClientCarousel";
 import Counter from "@/components/home/Counter";
 import FeatureSection from "@/components/home/Feature/FeatureSection";
@@ -11,25 +10,45 @@ import TemplateSection from "@/components/home/TemplateSection";
 import Cta from "@/components/home/Cta";
 import Footer from "@/components/common/Footer";
 import BlogListing from "@/components/home/Blog/BlogListing";
-import { NavbarDemo } from "@/components/common/NavbarDemo";
+
+
+const counterContent ={
+  counterTitle:{
+    title: "Driving Efficiency and Performance Gains with Data Point ",
+  },
+  counterData:[
+    {
+      title: "Faster strategy execution ",
+      number: "40",
+    },
+    {
+      title: "Increase in performance visibility",
+      number: "20",
+    },
+    {
+      title: " Improvement in goal alignment ",
+      number: "70",
+    },
+  ],
+}
 
 const page = () => {
   return (
     <div className="bg-body-home">
-      {/* <Navbar /> */}
-      <NavbarDemo />
       <Hero />
       <VideoSection title="Experience the power of Data Point in action"/>
       <ClientCarousel />
       <FeatureSection />
       <IndustrySection />
       <RightChoice />
-      <Counter />
+      <Counter
+        counterTitle={counterContent .counterTitle.title}
+        counterData={counterContent.counterData}
+      />
       <TestimonialCarousel />
       <TemplateSection />
       <BlogListing />
       <Cta />
-      <Footer />
     </div>
   );
 };

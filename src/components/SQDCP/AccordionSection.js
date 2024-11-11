@@ -1,4 +1,4 @@
-import Accordion from "@/components/industries/Accordion";
+import Accordion from "@/components/common/Accordion";
 
 const AccordionSection = () => {
   const accordionItems = [

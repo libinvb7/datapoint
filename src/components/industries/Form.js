@@ -6,7 +6,7 @@ import Message from "/public/assets/images/Message.png";
 import Profile from "/public/assets/images/Profile.png";
 import chat from "/public/assets/images/ChatFormnew.png";
 
-const FormIndustry = () => {
+const FormIndustry = ({title, desc}) => {
   return (
     <section className="mt-20">
       <div className="container ">
@@ -15,12 +15,10 @@ const FormIndustry = () => {
             <div className=" p-2 lg:max-w-[500px] bg-gradient-to-r from-[#115991] to-[#1873AC] border-0 p-5 rounded-lg flex justify-center items-center">
               <div className="p-10 p-5">
                 <h2 className="text-primary text-white text-left py-5 text-4xl">
-                  Start your journey towards enhanced manufacturing performance
-                  !
+                  {title || ""}
                 </h2>
                 <p className="text-xl text-white pb-4">
-                  Plan your strategic alignment with Digital Balanced Scorecard
-                </p>
+                 {desc || ""}</p>
                 <Image src={formImg} />
               </div>
             </div>
