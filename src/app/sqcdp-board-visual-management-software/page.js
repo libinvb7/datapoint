@@ -14,6 +14,7 @@ import SolutionCta from "@/components/solutions/SolutionCta"
 import SolutionsCard from "@/components/solutions/SolutionsCardSection"
 import AccordionSection from "@/components/SQDCP/AccordionSection"
 import manufacturingData from "../../data/industires/manufacturingData";
+import fmcgData from "../../data/industires/fmcgData";
 
 const page = () => {
   return (
@@ -24,7 +25,10 @@ const page = () => {
     <SolutionsCard/>
     <SolutionCta/>
     <StickyScrollReveal  title={manufacturingData.StickyScrollContentTitle.title} desc={manufacturingData.StickyScrollContentTitle.content}  content={manufacturingData.StickyScrollContent}/>
-    <Counter/>
+    <Counter
+        counterTitle={fmcgData .counterTitle.title}
+        counterData={fmcgData.counterData}
+      />
     <TestimonialCarousel/>
     <CtaTwo/>
     <FormIndustry/>
