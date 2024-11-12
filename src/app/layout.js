@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         className={`overflow-x-hidden bg-industry-home ${openSans.className}`}
       >
         <NavbarDemo />
-        {children}
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
