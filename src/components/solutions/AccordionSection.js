@@ -1,6 +1,6 @@
 import Accordion from "@/components/common/Accordion";
 
-const AccordionSection = ({accordionData}) => {
+const AccordionSection = ({accordionData }) => {
  
   return (
     <section className="mt-20">

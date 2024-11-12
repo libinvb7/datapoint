@@ -17,7 +17,7 @@ const Counter = ({counterData,counterTitle}) => {
                 <div>
                   <h2 className="font-bold  text-5xl bg-gradient-to-r from-[#37C1F1]  to-[#37BDB0] bg-clip-text text-transparent">{counterNum.number}%</h2>
                 </div>
-                <h3 className="text-card pt-3 max-w-56">{counterNum.title}</h3>
+                <h3 className="text-card pt-3 max-w-60 px-1">{counterNum.title}</h3>
               </div>
               ))
             }

@@ -15,7 +15,7 @@ export function BackgroundBoxesDemo({ title, highlightedTitle, desc }) {
           {highlightedTitle || ""}
         </span>
       </h2>
-      <p className="text-center  text-sm lg:text-xl my-7 max-w-[650px] relative z-20">
+      <p className="text-center  text-sm lg:text-xl my-7 max-w-[750px] relative z-20">
         {desc || ""}
       </p>
       <div className="flex items-center gap-3 relative z-20 ">
