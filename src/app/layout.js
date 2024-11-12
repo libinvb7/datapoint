@@ -1,7 +1,5 @@
 import { Open_Sans } from "next/font/google";
 import "../styles/globals.css";
-import { NavbarDemo } from "@/components/common/NavbarDemo";
-import Footer from "@/components/common/Footer";
 
 export const metadata = {
   title: "Balance Scorecard",
@@ -18,9 +16,7 @@ export default function RootLayout({ children }) {
       <body
         className={`overflow-x-hidden bg-industry-home ${openSans.className}`}
       >
-        <NavbarDemo />
         <main>{children}</main>
-        <Footer />
       </body>
     </html>
   );
