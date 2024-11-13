@@ -1,3 +1,4 @@
+import StorylaneEmbed from "./StorylaneEmbed";
 import VideoPlayer from "./VideoPlayer ";
 
 const VideoSection = ({title,desc}) => {
@@ -12,7 +13,9 @@ const VideoSection = ({title,desc}) => {
           
 
           <div className="glass-bg p-2 lg:p-5   rounded-lg">
-            <VideoPlayer />
+          <StorylaneEmbed/>
+
+            {/* <VideoPlayer /> */}
           </div>
         </div>
         

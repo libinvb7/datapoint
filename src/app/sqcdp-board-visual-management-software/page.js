@@ -2,7 +2,7 @@ import Footer from "@/components/common/Footer";
 import Navbar from "@/components/common/Navbar";
 import { NavbarDemo } from "@/components/common/NavbarDemo";
 import { ClientCarousel } from "@/components/home/ClientCarousel";
-import Counter from "@/components/home/Counter";
+import Counter from "@/components/common/counter/Counter";
 import TestimonialCarousel from "@/components/home/TestimonialCarousel";
 import VideoSection from "@/components/home/video/VideoSection";
 import CtaTwo from "@/components/industries/CtaTwo";

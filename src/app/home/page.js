@@ -1,5 +1,5 @@
 import { ClientCarousel } from "@/components/home/ClientCarousel";
-import Counter from "@/components/home/Counter";
+import Counter from "@/components/common/counter/Counter";
 import FeatureSection from "@/components/home/Feature/FeatureSection";
 import Hero from "@/components/home/Hero";
 import IndustrySection from "@/components/home/industry/IndustrySection";

@@ -36,7 +36,7 @@ export function NavbarDemo() {
 function Navbar({ className }) {
   const [active, setActive] = useState(null);
   return (
-    <div className={cn("w-fit relative top-0 inset-x-0 w-full mx-auto z-50", className)}>
+    <div className={cn("w-fit relative top-0 inset-x-0 w-full mx-auto z-50 hidden md:block" , className)}>
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="Services">
           <div className="flex flex-col space-y-4 text-sm">
@@ -146,7 +146,13 @@ function Navbar({ className }) {
             />
              <ProductItem
               title="FCIL"
-              href="fcil-balanced-scorecard"
+              href="/fcil-balanced-scorecard"
+              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+            />
+             <ProductItem
+              title="SQDC"
+              href="sqdc-visual-management-huddle-board"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />

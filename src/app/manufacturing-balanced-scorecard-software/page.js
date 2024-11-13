@@ -1,5 +1,5 @@
 import { ClientCarousel } from "@/components/home/ClientCarousel";
-import Counter from "@/components/home/Counter";
+import Counter from "@/components/common/counter/Counter";
 import IndustrySection from "@/components/home/industry/IndustrySection";
 import AccordionSection from "@/components/industries/AccordionSection";
 import ManufacturingCompaniesUseBalancedScorecard from "@/components/industries/ManufacturingCompaniesUseBalancedScorecard";

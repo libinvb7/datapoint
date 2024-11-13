@@ -1,3 +1,5 @@
+import Footer from "@/components/common/Footer";
+import Navbar from "@/components/common/Navbar";
 import { NavbarDemo } from "@/components/common/NavbarDemo";
 import { ClientCarousel } from "@/components/home/ClientCarousel";
 import Counter from "@/components/common/counter/Counter";
@@ -11,40 +13,41 @@ import LearnMore from "@/components/solutions/LearnMore";
 import SolutionCta from "@/components/solutions/SolutionCta";
 import SolutionsCard from "@/components/solutions/SolutionsCardSection";
 import AccordionSection from "@/components/solutions/AccordionSection";
-import sqdclData from "../../data/solutions/sqdclData";
+import manufacturingData from "../../data/industires/manufacturingData";
+import sqdcData from "../../data/solutions/sqdcData";
 
 const page = () => {
   return (
     <div className="bg-solutions-home">
       <BackgroundBoxesDemo
-        title={sqdclData.bannerData?.title}
-        highlightedTitle={sqdclData.bannerData?.HighlightTitle}
-        desc={sqdclData.bannerData?.desc}
+        title={sqdcData.bannerData?.title}
+        highlightedTitle={sqdcData.bannerData?.HighlightTitle}
+        desc={sqdcData.bannerData?.desc}
       />
       <VideoSection />
       <ClientCarousel />
       <SolutionsCard
-        title={sqdclData.cardSectionTitle?.title}
-        desc={sqdclData.cardSectionTitle?.desc}
-        cardData={sqdclData.cardData}
+        title={sqdcData.cardSectionTitle?.title}
+        desc={sqdcData.cardSectionTitle?.desc}
+        cardData={sqdcData.cardData}
       />
       <SolutionCta />
       <StickyScrollReveal
-        title={sqdclData.StickyScrollContentTitle?.title}
-        desc={sqdclData.StickyScrollContentTitle?.content}
-        content={sqdclData.StickyScrollContent}
+        title={sqdcData.StickyScrollContentTitle?.title}
+        desc={sqdcData.StickyScrollContentTitle?.content}
+        content={sqdcData.StickyScrollContent}
       />
       <Counter
-        counterTitle={sqdclData.counterTitle?.title}
-        counterData={sqdclData.counterData}
+        counterTitle={sqdcData.counterTitle?.title}
+        counterData={sqdcData.counterData}
       />
       <TestimonialCarousel />
       <CtaTwo />
       <FormIndustry
-        title={sqdclData.formContents?.title}
-        desc={sqdclData.formContents?.desc}
+        title={sqdcData.formContents?.title}
+        desc={sqdcData.formContents?.desc}
       />
-      <AccordionSection accordionData={sqdclData.accordionItems}  />
+      <AccordionSection accordionData={sqdcData.accordionItems}  />
     </div>
   );
 };
